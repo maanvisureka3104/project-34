@@ -12,16 +12,19 @@ class drops{
             this.radius=10;
             World.add(world,this.body);
     }
+
+    update(){
+    if(this.body.position.y>height){
+        Matter.Body.setPosition(this.body,{x:random(0,500),y:random(0,500)})
+    }
+    }
+
     display()
     {
         var pos=this.body.position;
-        var angle=this.body.angle;
-        push();
-        translate(pos.x,pos.y);
         fill('blue');
-        rotate(angle);
-        rectMode(CENTER);
-        ellipse(this.x,this.y,this.radius,this.radius);
-        pop();     
+        ellipseMode(CENTER);
+        ellipse(pos.x,pos.y,this.radius,this.radius);    
     }
+
 }

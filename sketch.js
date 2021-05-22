@@ -9,10 +9,10 @@ var t1,t2,t3,t4;
 var thunder,umbrella;
 
 function preload(){
-    t1=loadImage("1.png");
-    t2=loadImage("2.png");
-    t3=loadImage("3.png");
-    t4=loadImage("4.png");
+    t1=loadImage("thunderbolt/1.png");
+    t2=loadImage("thunderbolt/2.png");
+    t3=loadImage("thunderbolt/3.png");
+    t4=loadImage("thunderbolt/4.png");
 }
 
 function setup(){
